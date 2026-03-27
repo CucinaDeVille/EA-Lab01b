@@ -1,23 +1,16 @@
-import Article from './Article'
+import Page from "./Page";
+
+const articles = [
+    { mytext: "New Banana found in Offenburg", imageSrc: "https://i.imgur.com/U1QeBwO.jpeg" },
+    { mytext: "Biggest Banana ever!", imageSrc: "https://i.imgur.com/n2fP4fH.jpg" },
+    { mytext: "Banana for scale!", imageSrc: "https://i.imgur.com/fxNl7Ca.png" }
+];
 
 function App() {
     return (
-        <div>
-
-            {/*Article aufrufen und drei Attribute übergeben */}
-            <Article
-                imageSrc="https://i.imgur.com/U1QeBwO.jpeg"
-                mytext="New banana found in Offenburg"
-                mynum="1"
-            />
-
-            {/*Article aufrufen und drei Attribute übergeben */}
-            <Article
-                imageSrc="https://i.imgur.com/n2fP4fH.jpg"
-                mytext="Biggest banana ever!"
-                mynum="2"
-            />
-        </div>
+        <>
+            <Page content={articles} />
+        </>
     );
 }
 
