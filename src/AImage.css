@@ -1,0 +1,7 @@
+.nice-img {
+    background-color:rgb(255, 233, 108);
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px #000 solid;
+}
